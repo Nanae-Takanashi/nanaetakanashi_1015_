@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design Works</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style-other.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header2">
+      <div class="header__block">
+        <div class="heder__inner">
+          <div class="header-btn__contents">
+            <div class="top-button"><a href="./index.html">Top</a></div>
+            <div class="enquiry-button"><a href="./index.html#enquiry">Enquiry</a></div>
+          </div>
+          <nav class="header__nav">
+            <ul class="menu2">
+              <li><a href="./web-design.html">Web-design</a></li>
+              <li><a href="./photos-works.html">Photos</a></li>
+              <li><a href="./graphic-works.html">Graphic-design</a></li>
+              <li><a href="./video-works.html">Videos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="pc-mobile-btn">
+          <div class="area-left">
+            <div class="web-design__img">
+              <img src="./images/web_design.png" alt="web design" />
+            </div>
+            <div class="btn-area">
+              <div class="button-container">
+                <a
+                  href="javascript:void(0)"
+                  class="slanted-button pc-tab active"
+                >
+                  <span class="button-text">PC</span>
+                  <div class="slant-line"></div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="javascript:void(0)" class="slanted-button mobile-tab">
+                  <span class="button-text">Mobile</span>
+                  <div class="slant-line"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="slick-area">
+            <div class="slider-pc-items">
+              <li><a href="./life-hairsalon-works.html"><img src="images/mockup_pc1.png" alt="" loading="lazy" /></a></li>
+              <li><a href="./design-cafe-works.html"><img src="images/mockup_pc2.png" alt="" loading="lazy" /></a></li>
+            </div>
+            <div class="slider-mobile-items" style="display: none">
+              <li>
+                <a href="./life-hairsalon-works.html"><img src="images/mockup_mobile1.png" alt="" loading="lazy" /></a>
+              </li>
+              <li>
+                <a href="./design-cafe-works.html"><img src="images/mockup_mobile2.png" alt="" loading="lazy" /></a>
+              </li>
+              <li>
+                <img
+                  src="images/mockup_mobile_comingsoon.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </li>
+            </div>
+            <div class="arrows">
+              <button type="button" class="slick-prev"></button>
+              <button type="button" class="slick-next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      $(document).ready(function () {
+        // PCスライダーの初期化
+        $(".slider-pc-items").slick({
+          dots: true,
+          arrows: false, // カスタム矢印を使用するためSlickのデフォルト矢印を無効化
+          lazyLoad: "ondemand", // Lazy Loadを有効にする
+        });
+
+        // モバイルスライダーの初期化（slidesToShow: 2）
+        $(".slider-mobile-items").slick({
+          dots: true,
+          arrows: false, // カスタム矢印を使用するためSlickのデフォルト矢印を無効化
+          lazyLoad: "ondemand", // Lazy Loadを有効にする
+          slidesToShow: 2, // 1度に表示するスライド数を2に設定
+        });
+
+        // PCボタンがクリックされた時の処理
+        $(".pc-tab").on("click", function () {
+          $(".slider-pc-items").show(); // PCスライダーを表示
+          $(".slider-pc-items").slick("setPosition"); // スライダーのレイアウトを再計算
+          $(".slider-mobile-items").hide(); // モバイルスライダーを非表示
+          $(".pc-tab").addClass("active"); // PCボタンをアクティブに
+          $(".mobile-tab").removeClass("active"); // Mobileボタンからアクティブを外す
+        });
+
+        // Mobileボタンがクリックされた時の処理
+        $(".mobile-tab").on("click", function () {
+          $(".slider-pc-items").hide(); // PCスライダーを非表示
+          $(".slider-mobile-items").show(); // モバイルスライダーを表示
+          $(".slider-mobile-items").slick("setPosition"); // スライダーのレイアウトを再計算
+          $(".mobile-tab").addClass("active"); // Mobileボタンをアクティブに
+          $(".pc-tab").removeClass("active"); // PCボタンからアクティブを外す
+        });
+
+        // 矢印ボタンとスライダーの紐付け
+        $(".slick-prev").on("click", function () {
+          if ($(".slider-pc-items").is(":visible")) {
+            $(".slider-pc-items").slick("slickPrev"); // PCスライダーで前のアイテムへ移動
+          } else if ($(".slider-mobile-items").is(":visible")) {
+            $(".slider-mobile-items").slick("slickPrev"); // モバイルスライダーで前のアイテムへ移動
+          }
+        });
+
+        $(".slick-next").on("click", function () {
+          if ($(".slider-pc-items").is(":visible")) {
+            $(".slider-pc-items").slick("slickNext"); // PCスライダーで次のアイテムへ移動
+          } else if ($(".slider-mobile-items").is(":visible")) {
+            $(".slider-mobile-items").slick("slickNext"); // モバイルスライダーで次のアイテムへ移動
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

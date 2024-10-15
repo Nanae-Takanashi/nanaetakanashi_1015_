@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 325">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="transition1">
+    <g id="transition_path1">
+      <path class="cls-1" d="M0,325C227.67,325,455.33,0,683,0s455.33,325,683,325V0H0v325Z"/>
+    </g>
+  </g>
+</svg>

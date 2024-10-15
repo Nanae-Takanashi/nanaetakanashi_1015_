@@ -1,0 +1,664 @@
+@charset "utf-8";
+
+body {
+  background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+  radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+  radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+  radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.opening {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.opening_bg{
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.opening .name{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: -6px;
+ 	transform: translateY(-50%);
+ 	overflow: hidden;
+  display: none;
+  background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+  radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+  radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+  radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 650px) {
+  .opening .name{
+    left: -3px;}}
+
+.profession{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  
+}
+
+.web_desighner{
+  width: 70%;
+}
+
+.photgrapher{
+  width: 80%;
+}
+
+.graphic_desighner{
+  width: 91%;
+}
+
+.video_creator{
+  width: 76%;
+}
+
+.scrolldown4{
+  display: none;
+  position:absolute;
+  bottom:50%;
+	right:5%;
+  animation: arrowmove 1s ease-in-out infinite;
+  position: fixed;
+  top: 0%;
+}
+
+@keyframes arrowmove{
+  0%{bottom:50%;}
+  50%{bottom:53%;}
+ 100%{bottom:50%;}
+}
+
+.scrolldown4 span{
+  position: absolute;
+	left: -6px;
+  margin: auto;
+	bottom:120px;
+  color: #ffffff;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.scrolldown4:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  width: 1px;
+  height: 20px;
+  background: #ffffff;
+  transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+  content:"";
+  position: absolute;
+  bottom:0;
+  right:0;
+  width:1px;
+  height: 100px;
+  background:#ffffff;
+}
+
+.scrolldown4.color_changed{
+  background: #326b80;
+}
+.scrolldown4.color_changed:after{
+  background: #326b80;
+}
+.scrolldown4.color_changed:before{
+  background: #326b80;
+}
+.scrolldown4.color_changed span{
+  color: #326b80;
+}
+
+/* ここからTOP画面 */
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+header{
+  display: flex;
+}
+
+.menu{
+  margin-left: 1%;
+  width: 14%;
+  position: fixed;
+  top:25%;
+  display: none;
+  z-index: 9999;
+}
+
+
+
+.contents{
+  border-left: solid #ffffff 1px;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #ffffff;
+  transition: .3s;
+}
+
+.contents li{
+  transition: .3s;
+}
+
+.contents.color_changed{
+  border-left: solid #326b80 1px;
+}
+
+.contents.color_changed li{
+  color: #326b80;
+}
+
+
+.menu li{
+  line-height: 1.7;
+  margin-left: 3%;
+  font-size: 120%;
+}
+
+.top_images{
+  width: 95%;
+  padding-left: 13%;
+}
+
+.top_title{
+  position: absolute;
+  right: 0;
+  width: 28%;
+  top: 40%;
+}
+
+
+/* ここからAbout Me */
+
+.about_me{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  /* clip-path: url(path);
+  -webkit-clip-path: url(#pathh); */
+}
+
+.profile{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile_photo{
+  margin-left: 5%;
+  width: 50%;
+}
+
+
+.box_introduction{
+  margin-top: 5%;
+  margin-left: -5%;
+  width: 40%;
+}
+
+.hello{
+  font-size: calc(100vw / 11);
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #326b80;
+  border-left: #326b80 solid 1px;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  
+}
+
+.introduction{
+  font-size: 20px;
+  color: #326b80;
+  border-left: #326b80 solid 1px;
+  padding-left: 3%;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.3;
+}
+
+.first_transition{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.why_nanae_logo{
+  width: 47%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* .box{
+  border-left   : 10px dotted #ffffff;
+  height: 100px;
+} */
+
+.box{
+  position: absolute;
+  bottom: 3%;
+  right:50%;
+  transform: translatex(+50%);
+} 
+
+.box::before{
+  content: "";
+  position: absolute;
+  top: -350%;
+  left: 50%;
+  border-left   : 10px dotted #ffffff;
+  height: 60px;
+  animation: pathmove 2s ease-in-out infinite;
+	opacity:0;
+}
+
+@keyframes pathmove{
+	0%{
+		height:0;
+		opacity: 0;
+	}
+	25%{
+		height:15px;
+		opacity: 1;
+	}
+	50%{
+		height:30px;
+		opacity: 1;
+	}
+  75%{
+    height:45px;
+		opacity: 1;
+  }
+  100%{
+    height:60px;
+		opacity: 1;
+  }
+}
+
+.box span{
+  font-size: 25px;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+
+
+
+
+
+/* ここからwebdesign */
+.web_design{
+  width:100%;
+  height: 50vh;
+  position: relative;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+
+.services_logo{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 50%;
+  display: none;
+}
+.services_logo img{
+  transition: .3s;
+}
+
+.web_design_logo{
+  width: 32%;
+  /* height: 20%; */
+}
+
+.sentence{
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.3;
+  font-size: 26px;
+  width: 40%;
+  border-left: solid #ffffff 1px;
+  padding-left: 1%;
+  margin-bottom: 2%;
+}
+
+.more{
+  position: relative;
+  background-color: #f4bfe3;
+  border: none;
+  display: block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.more::before{
+  content:"";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+  transform: rotate(-90deg);
+}
+
+.scroll-sec{
+  display: flex;
+}
+.scroll-sec .container{
+  width: 60%;
+}
+.scroll-sec .scroll-img{
+  width: 50%;
+  margin-right: -10%;
+}
+.devices{
+  width: 100%;
+  /* position: absolute;
+  right: 5%;
+  top: 30%; */
+}
+
+/* ここからphotos */
+.photos{
+  width:100%;
+  height: 100vh;
+  position: relative;
+}
+
+.photos_logo{
+  width: 20%;
+}
+
+.photos_sample{
+  width: 26%;
+  position: absolute;
+  right: 10%;
+  top: 1%;
+
+}
+
+/* ここからgraphic design */
+.graphic_design{
+  width:100%;
+  height: 100vh;
+  position: relative;
+}
+
+.graphic_design_logo{
+  width: 47%;
+}
+
+.gd_sample{
+  width: 25%;
+  position: absolute;
+  right: 10%;
+  top: 12%;
+}
+
+/* ここからvideo */
+.videos{
+  padding-top: 40%;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.videos .container{
+  margin-left: 20%;
+    margin-top: 5%;
+}
+
+.videos_logo{
+  width:25%;
+}
+
+.videos_sample{
+  width: 40%;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+
+/* ここからAre you interested */
+
+
+.last_transition{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.are_you_interested_logo{
+  width: 57%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.chat{
+  position: absolute;
+  bottom: 3%;
+  right:50%;
+  transform: translatex(+50%);
+}
+
+.chat p{
+  font-size: 25px;
+}
+
+
+/* ここからenquiry */
+
+.enquiry{
+  background-color: #ffffff;
+  width: 100%;
+  height: 70vh;
+  
+}
+
+.email{
+ background-color: #ffffff;
+ text-align: center;
+ padding-top: 100px;
+}
+
+.email h3{
+  display: inline;
+  font-size: 80px;
+  background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+  radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+  radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+  radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 3%;
+  padding-top: 10%;
+}
+
+.enquiry_form{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.enquiry_form p{
+  border-left: solid #326b80 1px;
+  padding-left: 1%;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.3;
+  font-size: 26px;
+  color: #326b80;
+  /* margin-bottom: 2%; */
+  width: 40%;
+}
+
+.btn{
+  display:block;
+  position: relative;
+  background-color: #ddddddbc;
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 3% auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer{
+  background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+  radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+  radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+  radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+  position: relative;
+ 
+
+}
+.footer_logo{
+  width: 36%;
+  margin: 3% auto 3% 3%;
+  /* margin-left: 3%;
+  margin-bottom: 3%; */
+}
+
+.copy_right{
+  font-size: 16px;
+  position: absolute;
+  right: 5px;
+  bottom: 20px;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+
+.wave-path {
+  /* margin-top: 0.4px; */
+}
+.wave-path02 {
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: -0.4px;
+  width: 100%;
+}
+.services_logo{
+  position: fixed;
+  display: none;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 31%;
+}
+
+/*========= 左固定レイアウトのためのCSS ===============*/
+
+/*左と右を囲う全体のエリア*/
+.scroll-contents{
+  position: relative;/*position stickyの基点にするため relativeをかける*/
+    display: flex;/*左エリア、右エリア横並び指定*/
+  flex-wrap: wrap;/*ボックスの折り返し可*/
+}
+
+/*左エリア*/
+.fixed-area{
+  /*左固定記述*/
+    position: -webkit-sticky;/*Safari用*/
+    position: sticky;
+  top:0;
+  margin-left: 20%;
+    margin-top: 5%;
+    padding-top: 20%;
+}
+
+/*右エリア*/
+.scroll-contents .container{
+  width:50%;
+  margin-left: auto;
+  padding: 0 20px;
+}
+.scroll-item{
+  padding-bottom: 200px;
+  padding-left: 150px;
+}
+
+
+
+.container img{
+  width: 70%;
+}
+
+.container-webdesign{
+  width:100%;
+}
+
+.container-webdesign img{
+  width: 50%;
+  padding-left: 510px;
+}
+/*＝＝＝＝＝＝＝＝＝＝＝768px以下の見え方＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+@media screen and (max-width:768px){
+.scroll-contents{
+  display: block;/*display:flex;を解除*/
+}
+section{
+  min-height:auto;/*縦を100vh⇒解除*/
+}
+
+.fixed-area{
+    position:relative!important;/*position stickyを解除*/
+  width:100%;/*横幅を100%にして1列に見せる*/
+  height: 40vh;/*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
+}
+
+.container{
+  width:100%;/*横幅を100%にして1列に見せる*/
+}
+}
+

@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+.header2 {
+  background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+    radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+    radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+    radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+  /* display: flex;  ユキノ記載*/
+  /* justify-content: space-between; */
+  height: 100vh; /*ユキノ記載*/
+  padding-top: 15px;
+  /* gap: 50px;  ユキノ記載*/
+}
+
+/*=====ユキノ記載===== */
+.header__block{
+  width: 90%;
+  margin: 0 auto;
+}
+.heder__inner {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto 65px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 15px;
+}
+.header-btn__contents {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.web-design__img {
+  min-width: 450px;
+  width: 33%;
+  margin-bottom: 62px;
+}
+.enquiry-button {
+  width: 122px;
+  height: 53px;
+}
+.enquiry-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 53px;
+  background-color: #f7c2e6;
+  color: #ffffff;
+  border: 2px solid #f7c2e6;
+  border-radius: 12px;
+}
+.slick-area{
+  position: relative;
+  width: calc(100% - 450px);
+}
+.arrows{
+  position: absolute;
+  left: -50px;
+  bottom: 70px;
+}
+.arrows .slick-prev:before{
+  font-family: FontAwesome;
+    content: "\f053";
+    font-size: 40px;
+}
+.arrows .slick-next:before{
+  font-family: FontAwesome;
+    content: "\f054";
+    font-size: 40px;
+}
+.pc-mobile-btn{
+  display: flex;
+}
+.slider-mobile-items{
+  
+}
+.btn-area{
+  display: flex;
+  flex-direction: column;
+}
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+.button-container:first-child{
+  margin-bottom: 23px;
+}
+
+.slanted-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 250px;
+  height: 60px;
+  border: 2px solid white;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  transition: background 0.3s, color 0.3s;
+  position: relative;
+}
+.pc-tab.active,
+.mobile-tab.active{
+  background-color: #fff;
+} 
+.pc-tab.active .button-text,
+.mobile-tab.active .button-text{
+  color: #9aaeef;
+}
+
+.slanted-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -14.5px;
+  width: 81px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-51.5deg); /* 斜めにするための変形 */
+}
+
+.button-text {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s;
+}
+
+.slanted-button:hover {
+  background: white;
+  opacity: 1;
+}
+
+.slanted-button:hover .button-text {
+  background: transparent;
+  color: #d7e2f2;
+}
+
+/*==================== */
+
+.menu2 {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.top-button {
+  display: block;
+  width: 80px;
+  height: 55px;
+  line-height: 55px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+.top-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background: #ffffff00;
+  text-align: center;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+}
+
+
+.slick-dotted.slick-slider{
+  padding-top: 30px;
+}
+.slick-dots{
+  bottom: inherit;
+  top: 0;
+}
+.slick-dots li button:before{
+  font-size: 17px;
+  color: #fff;
+}
+.slick-dots li.slick-active button:before{
+  color: #fff;
+}

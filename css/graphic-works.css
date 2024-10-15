@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+.header3{
+    background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+    radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+    radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+    radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+    height: 250px;
+    padding-top: 15px;
+}
+
+.header__block{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.heder__inner {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto 65px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 15px;
+}
+
+.menu2 {
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+.header-btn__contents {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+
+
+.header-btn__contents {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+  }
+
+.enquiry-button {
+  width: 122px;
+  height: 53px;
+}
+.enquiry-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 53px;
+  background-color: #f7c2e6;
+  color: #ffffff;
+  border: 2px solid #f7c2e6;
+  border-radius: 12px;
+}
+
+.top-button {
+    display: block;
+    width: 80px;
+    height: 55px;
+    line-height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+  .top-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: #ffffff00;
+    text-align: center;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+  }
+
+.graphic_design {
+    min-width: 450px;
+    width: 33%;
+    margin-bottom: 62px;
+}
+
+.back-button {
+    width: 122px;
+    height: 53px;
+    margin: 0 auto;
+  }
+  .back-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 53px;
+    background-color: #f7c2e6;
+    color: #ffffff;
+    border: 2px solid #f7c2e6;
+    border-radius: 12px;
+  }
+
+  .enquiry {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .enquiry-chat{
+    background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+    radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+    radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+    radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+    max-width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 60px;
+  }
+
+  .enquiry-chat-logo{
+    margin: 0 auto;
+    width: 33%;
+    padding-top: 50px;
+  }
+
+  
+
+  .enquiry-button-chat {
+    width: 230px;
+    height: 53px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .enquiry-button-chat a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 53px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+  }
+
+  footer{
+    background-image: radial-gradient(at 5% 0%, #9aaeef 30%, transparent 60%),
+    radial-gradient(at 80% 0%, #ffb680 30%, transparent 50%),
+    radial-gradient(at 20% 100%, #c4cdd5 30%, transparent 60%),
+    radial-gradient(at 70% 90%, #f7c2e6 20%, transparent 60%);
+    position: relative;
+    margin-top: 80px;
+  
+  }
+  .footer_logo{
+    width: 36%;
+    margin: 3% auto 3% 3%;
+    /* margin-left: 3%;
+    margin-bottom: 3%; */
+  }
+  
+  .copy_right{
+    font-size: 16px;
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+  }
+
+  .graphic-grid{
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  .grid {
+    display: grid;
+    width: 80vw;
+    margin: 0 auto;
+    gap: 6vw;
+    grid-template-columns: repeat(2,37vw);
+   
+    grid-template-rows: repeat(2,23vw);
+  }
